@@ -1,7 +1,11 @@
 import { AppState } from './AppState.js';
+import { PlayerController } from './controllers/PlayersController.js';
 import { router } from './router.js';
 
 class App {
+
+
+
 
   constructor() {
     window.addEventListener(
@@ -9,6 +13,7 @@ class App {
       () => this.handleRouteChange(),
       false
     );
+
   }
 
   handleRouteChange() {

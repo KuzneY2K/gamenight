@@ -14,6 +14,10 @@ function _drawPlayers() {
 
 export class PlayerController {
     constructor() {
+        function _scorePoint() {
+            console.log('clicked')
+        }
         _drawPlayers()
+        _scorePoint()
     }
 }
