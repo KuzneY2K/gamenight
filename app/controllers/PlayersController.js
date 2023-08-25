@@ -12,12 +12,15 @@ function _drawPlayers() {
     setHTML('players-container', template)
 }
 
+function _scorePoint() {
+    console.log('clicked')
+}
+
 export class PlayerController {
     constructor() {
-        function _scorePoint() {
-            console.log('clicked')
-        }
         _drawPlayers()
-        _scorePoint()
+
+        let scoreBtn = document.querySelectorAll('.scoreBtn')
+        scoreBtn.forEach(button => addEventListener('click', _scorePoint))
     }
 }

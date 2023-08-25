@@ -16,6 +16,10 @@ class ObservableAppState extends EventEmitter {
     new Player({
       name: 'david',
       score: 0
+    }),
+    new Player({
+      name: 'imposter mark',
+      score: 20
     })
   ]
 
