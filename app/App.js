@@ -1,5 +1,5 @@
 import { AppState } from './AppState.js';
-import { PlayerController } from './controllers/PlayersController.js';
+import { PlayersController } from './controllers/PlayersController.js';
 import { router } from './router.js';
 
 class App {
