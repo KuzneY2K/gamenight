@@ -25,8 +25,18 @@ export class PlayersController {
         _drawPlayers()
     }
 
+    deletePlayer(playerName) {
+        playersService.deletePlayer(playerName)
+        _drawPlayers()
+    }
+
     scorePoint(playerName) {
         playersService.scorePoint(playerName)
+        _drawPlayers()
+    }
+
+    removePoint(playerName) {
+        playersService.removePoint(playerName)
         _drawPlayers()
     }
 }

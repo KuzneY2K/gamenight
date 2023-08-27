@@ -16,6 +16,7 @@ export class Player {
     <p class="card-text">${this.score}</p>
     <div class="d-flex flex-column align-items-center">
     <a class="btn btn-primary scoreBtn p-0 m-0 mt-2 px-2" onclick="app.PlayersController.scorePoint('${this.name}')">Score +</a>
+    <a class="btn btn-primary scoreBtn p-0 m-0 mt-2 px-2" onclick="app.PlayersController.removePoint('${this.name}')">Score -</a>
     <a class="btn btn-danger deleteBtn p-0 m-0 mt-3 px-2" onclick="app.PlayersController.deletePlayer('${this.name}')">Remove Player</a>
     </div>
   </div>
